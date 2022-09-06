@@ -3,6 +3,7 @@
 class Example_Test extends WP_UnitTestCase {
 
 	function test_wordpress_and_plugin_are_loaded() {
+		$this->assertTrue( false );
 		$this->assertTrue( function_exists( 'do_action' ) );
 		$this->assertTrue( function_exists( 'example_plugin_file' ) );
 		$this->assertTrue( class_exists( 'Example\\Plugin' ) );
